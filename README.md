@@ -1,9 +1,11 @@
-
-## Introduce
+# 介绍
 
 [demo](https://zhqjiang.github.io/Tabs/dist/index.html)
 
 forked from https://github.com/houyulei/Tabs
+
+
+## 以下是原项目的readme.md 
 
 Tabs component of React,designed for mobile.Support gestures and lots of tabs.
 
