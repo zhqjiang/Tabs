@@ -4,7 +4,8 @@
  *
  * 标签页
  */
-import React, {PureComponent, PropTypes} from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types'
 import TabList from './components/TabList';
 import TabPanels from './components/TabPanels';
 
@@ -28,7 +29,7 @@ class Tabs extends PureComponent {
     constructor(props) {
         super(props);
 
-        this.state = {index: this.props.defaultIndex};
+        this.state = { index: this.props.defaultIndex };
         this.changeTabTo = this.changeTabTo.bind(this);
         this.onChange = this.onChange.bind(this);
         this.transitionEnd = this.transitionEnd.bind(this);

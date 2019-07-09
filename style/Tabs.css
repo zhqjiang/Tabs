@@ -9,7 +9,7 @@
     width: 100%;
     overflow-x: auto;
     background-color: #fff;
-    color: #000;
+    color: #b2b6cb;
 }
 
 .silk-tabs-nav-wrapper::-webkit-scrollbar {
@@ -26,10 +26,10 @@
 
 .silk-tabs-nav-scroller .silk-tabs-tab {
     display: inline-block;
-    padding: 0 15px;
-    font-size: 15px;
+    padding: 4px 10px 0 10px;
+    font-size: 16px;
     height: 44px;
-    line-height: 44px;
+    line-height: 2.5;
 }
 
 .clearfix:after {
@@ -42,7 +42,7 @@
 }
 
 .silk-tabs-active {
-    color: #3587F2;
+    color: #0074ff;
 }
 
 .silk-tabs-ink-bar {
@@ -50,7 +50,7 @@
     left: 0;
     bottom: 0;
     height: 2px;
-    background-color: #3587F2;
+    background-color: #0074ff;
 }
 
 .silk-tabs-ink-bar-animated {
@@ -62,7 +62,7 @@
     transform: translate3d(6px, 0px, 0px);
 }
 
-.silk-tabs-border-line {
+/*.silk-tabs-border-line {
     border: 0 solid #ededf0;
     border-bottom-width: 1px;
 }
@@ -131,5 +131,5 @@
     .silk-tabs-border-line::after {
         border-bottom-width: 1px;
     }
-}
+}*/
 

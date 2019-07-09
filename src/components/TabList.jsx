@@ -4,7 +4,8 @@
  *
  * tabs组件
  */
-import React, {PureComponent, PropTypes} from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types'
 import classNames from 'classnames';
 
 // import Scroller from '../../scroller';
@@ -14,7 +15,6 @@ import utils from './utils';
 const docWidth = document.documentElement.clientWidth;
 
 class TabList extends PureComponent {
-
     static propTypes = {
         onChange: PropTypes.func,
         tabs: PropTypes.arrayOf(PropTypes.node),
@@ -51,7 +51,13 @@ class TabList extends PureComponent {
         for (let i = 0; i < index; i++) {
             start += this.tabWidths[i];
         }
-        this.inkBar.style.cssText = `-webkit-transform: translate3d(${start + 6}px, 0px, 0px);transform: translate3d(${start + 6}px, 0px, 0px);width:${this.tabWidths[index] - 12}px`
+        // this.inkBar.style.cssText = `-webkit-transform: translate3d(${start + 6}px, 0px, 0px);`
+        //     + `transform: translate3d(${start + 6}px, 0px, 0px);`
+        //     + `width:${this.tabWidths[index] - 12}px`
+        this.inkBar.style.cssText = `-webkit-transform: translate3d(${start + this.tabWidths[index] / 2 - 15}px, 0px, 0px);`
+            + `transform: translate3d(${start + this.tabWidths[index] / 2 - 15}px, 0px, 0px);`
+            + `width: 30px`
+
         if (this.totalWidth > docWidth) {
             let scrollTo = start - this.tabWidths[index];
             this.animate(this.scroller.scrollLeft, scrollTo, duration, easing.fn)
@@ -93,7 +99,7 @@ class TabList extends PureComponent {
 
     updateTabWidth(index, width) {
         this.totalWidth = this.tabWidths[index] ?
-        (this.totalWidth - this.tabWidths[index]) + width : this.totalWidth + width
+            (this.totalWidth - this.tabWidths[index]) + width : this.totalWidth + width
         this.tabWidths[index] = width;
     }
 

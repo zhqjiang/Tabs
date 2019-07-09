@@ -1,9 +1,13 @@
 
 ## Introduce
 
+[demo](https://zhqjiang.github.io/Tabs/dist/index.html)
+
+forked from https://github.com/houyulei/Tabs
+
 Tabs component of React,designed for mobile.Support gestures and lots of tabs.
 
-[demo](https://houyulei.github.io/Tabs/dist/index.html)
+original [demo](https://houyulei.github.io/Tabs/dist/index.html)
 
 ## Installation
 

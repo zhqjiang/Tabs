@@ -4,8 +4,9 @@
  *
  * tab滑动内容区
  */
-import React, {PureComponent, PropTypes} from 'react';
-import ReactSwipe from 'silk-react-swipe';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types'
+import ReactSwipe from '../swipe/index'
 
 class TabPanels extends PureComponent {
     static propTypes = {

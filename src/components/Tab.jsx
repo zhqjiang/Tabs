@@ -4,7 +4,8 @@
  *
  * Tab组件
  */
-import React, {PureComponent, PropTypes} from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types'
 
 class Tab extends PureComponent {
     static propTypes = {

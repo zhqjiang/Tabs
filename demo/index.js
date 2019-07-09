@@ -14,14 +14,6 @@ import './index.css';
 const numberOfTabs = 8;
 const tabs = [...new Array(numberOfTabs)].map((_, i) => `tab${i}`);
 
-const Panels = [...new Array(numberOfTabs)].map((_, i) =>
-    (
-        <div key={i}>
-            <div className="myItem">{i}</div>
-        </div>
-    )
-);
-
 const tabPanelStyle = {
     container: {
         overflow: 'hidden',
@@ -48,19 +40,29 @@ const transitionEnd = index => console.log(`transitionEnd:${index}`)
 /* eslint-enable no-console*/
 
 const TabsExample = () => (
-    <div>
-        <Tabs
-            defaultIndex={2}
-            onChange={onChange}
-            transitionEnd={transitionEnd}
-            tabs={tabs}
-            tabPanelStyle={tabPanelStyle}
-            className="myTabs"
-        >
-            {Panels}
-        </Tabs>
-    </div>
+    <Tabs
+        defaultIndex={0}
+        onChange={onChange}
+        transitionEnd={transitionEnd}
+        tabs={tabs}
+        tabPanelStyle={tabPanelStyle}
+        className="myTabs"
+    >
+        {[...new Array(numberOfTabs)].map((_, i) => {
+            return (
+                <div key={i}>
+                    <div className="myItem">{i}</div>
+                </div>
+            )
+        }
+        )}
+    </Tabs>
 )
+
+function App() {
+    
+
+}
 
 
 if (document.getElementById('root')) {
