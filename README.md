@@ -2,7 +2,7 @@
 
 [demo](https://zhqjiang.github.io/Tabs/dist/index.html)
 
-forked from https://github.com/houyulei/Tabs，升级React至16.8+，精简不必要的引用
+forked from https://github.com/houyulei/Tabs， 升级React至16.8+，精简不必要的引用
 
 
 ## 以下是原项目的README.md
