@@ -59,11 +59,6 @@ const TabsExample = () => (
     </Tabs>
 )
 
-function App() {
-    
-
-}
-
 
 if (document.getElementById('root')) {
     ReactDOM.render(
